@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Halaman Utama -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/</loc>
+    <lastmod>2025-05-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://koloni4dvip.cc.cd/assets/images/logo.png</image:loc>
+      <image:title>KOLONI4D Logo</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Section Home -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/#home</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Section Statistik -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/#stats</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section Pasaran Togel -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/#pasaran</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section Bonus & Promo -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/#bonus</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section Layanan & Fitur -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/#layanan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Section FAQ -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/#faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Section Kontak/Footer -->
+  <url>
+    <loc>https://koloni4dvip.cc.cd/#kontak</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
