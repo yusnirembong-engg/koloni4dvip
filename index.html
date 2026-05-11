@@ -647,41 +647,6 @@
   </script>
 
   <!-- ========== ZENDESK LIVE CHAT WIDGET (STABIL) ========== -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript">
-  (function() {
-    if (typeof jQuery === 'undefined') {
-      var script = document.createElement('script');
-      script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
-      script.onload = initZendesk;
-      document.head.appendChild(script);
-    } else {
-      initZendesk();
-    }
-    
-    function initZendesk() {
-      var z = document.createElement("script");
-      z.type = "text/javascript";
-      z.async = true;
-      z.src = "https://v2.zopim.com/?BdycHcalYgK2Nrr12pqYTJssAGwVTuT8";
-      z.charset = "utf-8";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(z, s);
-      
-      setTimeout(function() {
-        if (typeof window.$zopim === 'undefined') {
-          var z2 = document.createElement("script");
-          z2.type = "text/javascript";
-          z2.async = true;
-          z2.src = "https://v2.zopim.com/?BdycHcalYgK2Nrr12pqYTJssAGwVTuT8&t=" + new Date().getTime();
-          var s2 = document.getElementsByTagName("script")[0];
-          s2.parentNode.insertBefore(z2, s2);
-        }
-      }, 5000);
-    }
-  })();
-  </script>
-
-
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=079561c6-4431-4c71-b902-a8280076fe3a"></script>
 </body>
 </html>
