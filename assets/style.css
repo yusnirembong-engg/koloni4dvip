@@ -409,6 +409,20 @@ nav {
   border-bottom: 1px solid rgba(247,212,74,0.1) !important;
 }
 
+/* ========== HERO IMAGE ========== */
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 32px;
+  filter: drop-shadow(0 0 20px rgba(247, 212, 74, 0.2));
+  transition: all 0.4s ease;
+}
+
+.hero-img:hover {
+  filter: drop-shadow(0 0 35px rgba(247, 212, 74, 0.35));
+  transform: scale(1.02);
+}
+
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
   .tab-btn {
