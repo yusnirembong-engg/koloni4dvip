@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <title>KOLONI4D - Live Draw Togel Online & Pasaran Resmi Terpercaya</title>
+  
+  <meta name="description" content="KOLONI4D adalah situs live draw togel online terpercaya dengan pasaran resmi Singapore, Hongkong, Sydney, dan lainnya. Bonus new member 20%, rollingan tanpa batas!">
+  <meta name="keywords" content="KOLONI4D, live draw, togel online, Singapore, Hongkong, Sydney, togel hari ini">
+  <meta name="author" content="KOLONI4D">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://berkoloni.net/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="KOLONI4D - Live Draw Togel Online Terpercaya">
+  <meta property="og:description" content="Pasaran togel resmi Singapore, Hongkong, Sydney, dan lainnya. Bonus new member 20%!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <!-- Fonts & Libraries -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    body {
+      background: #05050a;
+      overflow-x: hidden;
+    }
+    
+    /* BACKGROUND FUTURISTIK */
+    .bg-elegant {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at 40% 30%, #0a0a1a 0%, #04040a 50%, #020208 100%);
+      z-index: -3;
+    }
+    
+    .grid-line {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(rgba(247, 212, 74, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(247, 212, 74, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: -2;
+    }
+    
+    .neon-orb-1 {
+      position: fixed;
+      top: 20%;
+      right: -5%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(230, 180, 70, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: -1;
+      filter: blur(70px);
+      animation: floatGlow 12s ease-in-out infinite;
+    }
+    
+    .neon-orb-2 {
+      position: fixed;
+      bottom: 10%;
+      left: -10%;
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, rgba(230, 180, 70, 0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: -1;
+      filter: blur(80px);
+      animation: floatGlow2 15s ease-in-out infinite;
+    }
+    
+    @keyframes floatGlow {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.7; }
+      50% { transform: translate(-30px, -20px) scale(1.1); opacity: 1; }
+    }
+    
+    @keyframes floatGlow2 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+      50% { transform: translate(20px, 30px) scale(1.15); opacity: 0.8; }
+    }
+    
+    .gold-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      background: radial-gradient(circle at 20% 30%, rgba(230, 180, 70, 0.05) 0%, transparent 60%),
+                  radial-gradient(circle at 80% 70%, rgba(230, 180, 70, 0.03) 0%, transparent 60%);
+    }
+    
+    /* TEXT STYLES */
+    .text-gold { color: #F7D44A; }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #F7D44A, #E6B422, #FFE28A, #E6B422);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% auto;
+      animation: shimmer 3s ease infinite;
+    }
+    
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+    }
+    
+    .text-white { color: #FFFFFF; }
+    .text-gray-light { color: #E5E7EB; }
+    .text-gray-mid { color: #9CA3AF; }
+    
+    /* CARDS */
+    .card-premium {
+      background: rgba(12, 12, 22, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(247, 212, 74, 0.2);
+      border-radius: 28px;
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-premium::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(247, 212, 74, 0.08), transparent);
+      transition: left 0.6s ease;
+    }
+    
+    .card-premium:hover::before {
+      left: 100%;
+    }
+    
+    .card-premium:hover {
+      border-color: rgba(247, 212, 74, 0.5);
+      transform: translateY(-5px);
+      box-shadow: 0 25px 45px -15px rgba(247, 212, 74, 0.2);
+    }
+    
+    /* PASARAN CARD */
+    .pasaran-card {
+      background: rgba(8, 8, 16, 0.9);
+      backdrop-filter: blur(8px);
+      border-radius: 24px;
+      border-bottom: 2px solid #F7D44A;
+      transition: all 0.3s ease;
+    }
+    
+    .pasaran-card:hover {
+      transform: translateY(-3px);
+      border-bottom-color: #FFE28A;
+      box-shadow: 0 12px 28px -12px rgba(247, 212, 74, 0.3);
+    }
+    
+    /* BUTTONS */
+    .btn-gold {
+      background: linear-gradient(105deg, #E6B422, #F7D44A, #E6B422);
+      background-size: 200% auto;
+      color: #04040a;
+      font-weight: 700;
+      border-radius: 60px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(230, 180, 34, 0.3);
+      cursor: pointer;
+      border: none;
+    }
+    
+    .btn-gold:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(230, 180, 34, 0.5);
+      background-position: 100% center;
+    }
+    
+    .btn-outline {
+      border: 1.5px solid #F7D44A;
+      background: transparent;
+      color: #F7D44A;
+      border-radius: 60px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .btn-outline:hover {
+      background: rgba(247, 212, 74, 0.1);
+      border-color: #FFE28A;
+      box-shadow: 0 0 15px rgba(247, 212, 74, 0.3);
+    }
+    
+    /* PROVIDER CHIPS */
+    .provider-chip {
+      display: inline-block;
+      background: rgba(247, 212, 74, 0.1);
+      border-radius: 40px;
+      padding: 6px 18px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #F7D44A;
+      margin: 4px 8px 4px 0;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(247, 212, 74, 0.2);
+    }
+    
+    .provider-chip:hover {
+      background: rgba(247, 212, 74, 0.2);
+      transform: translateY(-2px);
+    }
+    
+    /* LEVEL GRID */
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 12px;
+    }
+    
+    .level-item {
+      background: rgba(247, 212, 74, 0.06);
+      border-radius: 16px;
+      padding: 12px 6px;
+      text-align: center;
+      border-left: 2px solid #F7D44A;
+      transition: all 0.3s ease;
+    }
+    
+    .level-item:hover {
+      background: rgba(247, 212, 74, 0.12);
+      transform: translateX(4px);
+    }
+    
+    /* TAB NAVIGATION */
+    .tab-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    
+    .tab-btn {
+      padding: 10px 30px;
+      border-radius: 60px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: #9CA3AF;
+      background: rgba(10, 10, 20, 0.6);
+      border: 1px solid rgba(247, 212, 74, 0.2);
+      backdrop-filter: blur(8px);
+    }
+    
+    .tab-btn.active {
+      background: linear-gradient(105deg, #E6B422, #F7D44A);
+      color: #04040a;
+      border-color: transparent;
+      box-shadow: 0 4px 15px rgba(247, 212, 74, 0.35);
+      transform: scale(1.02);
+    }
+    
+    .tab-pane { display: none; animation: fadeSlideUp 0.5s ease; }
+    .tab-pane.active { display: block; }
+    
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .detail-toggle {
+      cursor: pointer;
+      color: #F7D44A;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    
+    .detail-content {
+      display: none;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 16px;
+      margin-top: 14px;
+      font-size: 12px;
+      border: 1px solid rgba(247, 212, 74, 0.15);
+    }
+    
+    .info-box {
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+      border-radius: 18px;
+      padding: 14px;
+      margin-top: 14px;
+      border-left: 2px solid #F7D44A;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding-left: clamp(1rem, 4vw, 2rem);
+      padding-right: clamp(1rem, 4vw, 2rem);
+    }
+    
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #F7D44A, #E6B422, #F7D44A, transparent);
+    }
+    
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 32px;
+    }
+    
+    .scroll-top {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #E6B422, #F7D44A);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 99;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(230, 180, 34, 0.4);
+      animation: pulseGlow 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 4px 15px rgba(230, 180, 34, 0.4); }
+      50% { box-shadow: 0 4px 25px rgba(230, 180, 34, 0.7); }
+    }
+    
+    .scroll-top:hover {
+      transform: scale(1.12);
+      box-shadow: 0 6px 25px rgba(230, 180, 34, 0.6);
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.97);
+      backdrop-filter: blur(16px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal-content {
+      background: rgba(18, 18, 32, 0.98);
+      backdrop-filter: blur(20px);
+      border-radius: 32px;
+      max-width: 400px;
+      width: 90%;
+      border: 1px solid #F7D44A;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 0 50px rgba(247, 212, 74, 0.15);
+      animation: modalPop 0.3s ease;
+    }
+    
+    @keyframes modalPop {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    
+    nav {
+      background: rgba(0, 0, 0, 0.85) !important;
+      backdrop-filter: blur(20px) !important;
+    }
+    
+    @media (max-width: 767px) {
+      .hero-img { max-width: 220px; }
+      .tab-btn { padding: 6px 14px; font-size: 11px; }
+      .card-premium { padding: 16px !important; }
+      .level-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-elegant"></div>
+<div class="grid-line"></div>
+<div class="neon-orb-1"></div>
+<div class="neon-orb-2"></div>
+<div class="gold-glow"></div>
+
+<div class="scroll-top" id="scrollTop">
+  <i class="fas fa-chevron-up text-black font-bold text-xl"></i>
+</div>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-2xl border-b border-yellow-800/30">
+  <div class="container py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="text-2xl sm:text-3xl font-extrabold">
+      <span class="text-gold-gradient">KOLONI</span><span class="text-white">4D</span>
+    </div>
+    <div class="hidden md:flex gap-8 font-medium">
+      <a href="#home" class="text-gray-light hover:text-gold transition-all duration-300 text-sm">Beranda</a>
+      <a href="#pasaran" class="text-gray-light hover:text-gold transition-all duration-300 text-sm">Pasaran</a>
+      <a href="#bonus" class="text-gray-light hover:text-gold transition-all duration-300 text-sm">Bonus</a>
+      <a href="#faq" class="text-gray-light hover:text-gold transition-all duration-300 text-sm">FAQ</a>
+    </div>
+    <div class="flex gap-2">
+      <button class="px-5 py-2 btn-outline text-sm loginBtn">Login</button>
+      <button class="px-6 py-2 btn-gold text-sm daftarBtn">Daftar</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO SECTION -->
+  <section id="home" class="pt-28 md:pt-36 pb-12">
+    <div class="container">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left space-y-6">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+            <span class="text-white">Pusat Akses</span>
+            <span class="text-gold-gradient">KOLONI4D</span>
+          </h1>
+          <p class="text-gray-light text-base sm:text-lg">Live draw togel online terpercaya dengan pasaran resmi Singapore, Hongkong, Sydney, dan lainnya. Bonus new member 20%, rollingan tanpa batas!</p>
+          <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <button class="px-7 py-3 btn-gold text-base flex items-center gap-2 heroDaftarBtn"><i class="fas fa-user-plus"></i> Daftar Sekarang</button>
+            <button class="px-7 py-3 btn-outline text-base loginBtn"><i class="fas fa-sign-in-alt"></i> Login</button>
+          </div>
+          <div class="flex flex-wrap gap-5 justify-center lg:justify-start text-sm">
+            <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-gold"></i><span class="text-gray-mid">Berlisensi Resmi</span></div>
+            <div class="flex items-center gap-2"><i class="fas fa-lock text-gold"></i><span class="text-gray-mid">SSL Enkripsi</span></div>
+            <div class="flex items-center gap-2"><i class="fas fa-clock text-gold"></i><span class="text-gray-mid">Live Draw 24 Jam</span></div>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <div class="text-center">
+            <i class="fas fa-chart-line text-gold text-7xl mb-3"></i>
+            <p class="text-gray-mid text-sm">Live Update Terpercaya</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider mt-14"></div>
+    </div>
+  </section>
+
+  <!-- PASARAN TOGEL (tanpa angka, jam, periode) -->
+  <section id="pasaran" class="py-14">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold"><span class="text-white">Pasaran</span> <span class="text-gold-gradient">Togel Resmi</span></h2>
+        <p class="text-gray-mid text-sm mt-1">Live draw terupdate setiap hari</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        
+        <!-- Singapore -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">SGP</span>
+          </div>
+          <p class="text-white font-semibold">Singapore Pools</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran resmi Singapore</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+        <!-- Hongkong -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">HK</span>
+          </div>
+          <p class="text-white font-semibold">Hongkong Pools</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran resmi Hongkong</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+        <!-- Sydney -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">SDY</span>
+          </div>
+          <p class="text-white font-semibold">Sydney Pools</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran resmi Sydney</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+        <!-- Damacai -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">DMC</span>
+          </div>
+          <p class="text-white font-semibold">Damacai</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran Malaysia</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+        <!-- Magnum4D -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">M4D</span>
+          </div>
+          <p class="text-white font-semibold">Magnum 4D</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran Malaysia</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+        <!-- Bullseye -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">BULL</span>
+          </div>
+          <p class="text-white font-semibold">Bullseye</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran resmi</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+        <!-- Sport Toto -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">TOTO</span>
+          </div>
+          <p class="text-white font-semibold">Sport Toto</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran Malaysia</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+        <!-- Macau -->
+        <div class="pasaran-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fas fa-flag-checkered text-gold text-2xl"></i>
+            <span class="text-gold font-bold text-xl">MC</span>
+          </div>
+          <p class="text-white font-semibold">Macau Pools</p>
+          <p class="text-gray-mid text-xs mt-2">Pasaran resmi Macau</p>
+          <div class="mt-3 text-green-500 text-xs">
+            <i class="fas fa-circle"></i> Live
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="text-center mt-8">
+        <p class="text-gray-mid text-xs">*Pasaran selalu update dan tidak tutup</p>
+      </div>
+      
+      <div class="divider my-14"></div>
+    </div>
+  </section>
+
+  <!-- BONUS & PROMO (SAMA SEPERTI SINGASLOT) -->
+  <section id="bonus" class="py-14">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold"><span class="text-white">🔥 Semua</span> <span class="text-gold-gradient">Bonus & Promo</span></h2>
+        <p class="text-gray-mid text-sm mt-1">Pilih promo favorit Anda dan klaim sekarang!</p>
+      </div>
+      
+      <div class="tab-container">
+        <div class="tab-btn active" data-tab="tab1">✨ New Member</div>
+        <div class="tab-btn" data-tab="tab2">📅 Deposit Harian</div>
+        <div class="tab-btn" data-tab="tab3">🔄 Rollingan</div>
+        <div class="tab-btn" data-tab="tab4">⚽ Cashback</div>
+        <div class="tab-btn" data-tab="tab5">👥 Lainnya</div>
+      </div>
+      
+      <!-- TAB 1: NEW MEMBER -->
+      <div id="tab1" class="tab-pane active">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+          <div class="card-premium p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center"><i class="fas fa-fire-flame text-gold text-2xl"></i></div>
+              <div><h3 class="text-xl font-bold text-gold">BONUS NEW MEMBER</h3><p class="text-gray-mid text-xs">Khusus PG SOFT</p></div>
+            </div>
+            <div class="grid grid-cols-3 gap-3 text-center">
+              <div class="bg-black/40 rounded-xl p-3"><span class="text-gray-mid text-xs">Min Deposit</span><br><span class="text-white font-bold text-lg">Rp20.000</span></div>
+              <div class="bg-black/40 rounded-xl p-3"><span class="text-gray-mid text-xs">Max Bonus</span><br><span class="text-white font-bold text-lg">Rp200.000</span></div>
+              <div class="bg-black/40 rounded-xl p-3"><span class="text-gray-mid text-xs">Turnover</span><br><span class="text-white font-bold text-lg">7x</span></div>
+            </div>
+            <div class="info-box mt-4 text-gray-mid text-xs">🎯 Bonus dihitung dari deposit pertama + bonus.</div>
+            <div class="mt-3"><span class="detail-toggle" data-detail="detail1">📜 Lihat Syarat Lengkap</span></div>
+            <div id="detail1" class="detail-content text-gray-mid text-xs">• Tidak boleh safety bet / kesamaan IP<br>• Tidak boleh hold free spin<br>• Keputusan admin mutlak</div>
+            <button class="w-full mt-4 btn-gold py-3 text-sm font-bold klaimBtn">🎁 Klaim Bonus Sekarang →</button>
+          </div>
+          
+          <div class="card-premium p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center"><i class="fas fa-gem text-gold text-2xl"></i></div>
+              <div><h3 class="text-xl font-bold text-gold">BONUS NEW MEMBER</h3><p class="text-gray-mid text-xs">Khusus Pragmatic Play</p></div>
+            </div>
+            <div class="grid grid-cols-3 gap-3 text-center">
+              <div class="bg-black/40 rounded-xl p-3"><span class="text-gray-mid text-xs">Min Deposit</span><br><span class="text-white font-bold text-lg">Rp20.000</span></div>
+              <div class="bg-black/40 rounded-xl p-3"><span class="text-gray-mid text-xs">Max Bonus</span><br><span class="text-white font-bold text-lg">Rp200.000</span></div>
+              <div class="bg-black/40 rounded-xl p-3"><span class="text-gray-mid text-xs">Turnover</span><br><span class="text-white font-bold text-lg">12x</span></div>
+            </div>
+            <div class="info-box mt-4 text-gray-mid text-xs">🎯 Bonus dihitung dari deposit pertama + bonus.</div>
+            <div class="mt-3"><span class="detail-toggle" data-detail="detail2">📜 Lihat Syarat Lengkap</span></div>
+            <div id="detail2" class="detail-content text-gray-mid text-xs">• Tidak boleh safety bet / kesamaan IP<br>• Tidak boleh hold free spin<br>• Keputusan admin mutlak</div>
+            <button class="w-full mt-4 btn-gold py-3 text-sm font-bold klaimBtn">🎁 Klaim Bonus Sekarang →</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- TAB 2: DEPOSIT HARIAN -->
+      <div id="tab2" class="tab-pane">
+        <div class="card-premium p-6">
+          <div class="text-center mb-5">
+            <i class="fas fa-calendar-alt text-gold text-5xl mb-3"></i>
+            <h3 class="text-2xl font-bold text-gold">BONUS DEPOSIT HARIAN 10%</h3>
+            <p class="text-gray-light text-sm mt-1">Setiap hari untuk semua member setia!</p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-5">
+            <div class="bg-black/40 rounded-xl p-3 text-center"><span class="text-gray-mid text-xs">Min Deposit</span><br><span class="text-white font-bold text-lg">Rp20.000</span></div>
+            <div class="bg-black/40 rounded-xl p-3 text-center"><span class="text-gray-mid text-xs">Max Bonus</span><br><span class="text-white font-bold text-lg">Rp100.000</span></div>
+            <div class="bg-black/40 rounded-xl p-3 text-center"><span class="text-gray-mid text-xs">Turnover</span><br><span class="text-white font-bold text-lg">3x</span></div>
+            <div class="bg-black/40 rounded-xl p-3 text-center"><span class="text-gray-mid text-xs">Maksimal Klaim</span><br><span class="text-white font-bold text-lg">1x/Hari</span></div>
+          </div>
+          <div class="mt-4"><span class="detail-toggle" data-detail="detail3">📜 Syarat & Ketentuan</span></div>
+          <div id="detail3" class="detail-content text-gray-mid text-xs">• Bonus 10% dari jumlah deposit<br>• Minimal deposit Rp20.000<br>• Turnover 3x (deposit+bonus)</div>
+          <button class="w-full mt-4 btn-gold py-3 text-sm font-bold klaimBtn">🎁 Klaim Bonus Harian →</button>
+        </div>
+      </div>
+      
+      <!-- TAB 3: ROLLINGAN -->
+      <div id="tab3" class="tab-pane">
+        <div class="card-premium p-6 mb-6">
+          <h3 class="text-2xl font-bold text-gold mb-4">🔄 BONUS ROLLINGAN SLOT</h3>
+          <div class="level-grid mb-5">
+            <div class="level-item"><span class="text-gray-mid text-xs">Brown</span><br><span class="text-gold text-xl font-bold">0.20%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Silver</span><br><span class="text-gold text-xl font-bold">0.25%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Gold</span><br><span class="text-gold text-xl font-bold">0.30%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Platinum</span><br><span class="text-gold text-xl font-bold">0.35%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Diamond</span><br><span class="text-gold text-xl font-bold">0.40%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">VIP</span><br><span class="text-gold text-xl font-bold">0.50%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">VVIP</span><br><span class="text-gold text-xl font-bold">0.60%</span></div>
+          </div>
+          <p class="text-xs text-gray-mid">*Total 25+ provider slot terbaik</p>
+        </div>
+        
+        <div class="card-premium p-6">
+          <h3 class="text-2xl font-bold text-gold mb-4">🎲 BONUS ROLLINGAN LIVE CASINO</h3>
+          <div class="level-grid">
+            <div class="level-item"><span class="text-gray-mid text-xs">Brown</span><br><span class="text-gold text-xl font-bold">0.10%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Silver</span><br><span class="text-gold text-xl font-bold">0.20%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Gold</span><br><span class="text-gold text-xl font-bold">0.30%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Platinum</span><br><span class="text-gold text-xl font-bold">0.40%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">Diamond</span><br><span class="text-gold text-xl font-bold">0.50%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">VIP</span><br><span class="text-gold text-xl font-bold">0.60%</span></div>
+            <div class="level-item"><span class="text-gray-mid text-xs">VVIP</span><br><span class="text-gold text-xl font-bold">0.80%</span></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- TAB 4: CASHBACK -->
+      <div id="tab4" class="tab-pane">
+        <div class="card-premium p-6">
+          <div class="text-center mb-5">
+            <i class="fas fa-futbol text-gold text-5xl mb-3"></i>
+            <h3 class="text-2xl font-bold text-gold">BONUS CASHBACK SPORTSBOOK</h3>
+            <p class="text-3xl font-bold text-gold">UP TO 15%</p>
+          </div>
+          <div class="grid grid-cols-3 gap-4 mb-5">
+            <div class="bg-black/50 rounded-xl p-4 text-center border-l-2 border-gold"><span class="text-gray-mid text-xs">Kekalahan</span><p class="text-white text-sm font-semibold">Rp250rb - Rp50jt</p><span class="text-gold text-2xl font-bold">5%</span></div>
+            <div class="bg-black/50 rounded-xl p-4 text-center border-l-2 border-gold"><span class="text-gray-mid text-xs">Kekalahan</span><p class="text-white text-sm font-semibold">Rp50jt - Rp100jt</p><span class="text-gold text-2xl font-bold">10%</span></div>
+            <div class="bg-black/50 rounded-xl p-4 text-center border-l-2 border-gold"><span class="text-gray-mid text-xs">Kekalahan</span><p class="text-white text-sm font-semibold">Rp100jt+</p><span class="text-gold text-2xl font-bold">15%</span></div>
+          </div>
+          <div class="info-box"><p class="text-gray-mid text-xs"><i class="fas fa-info-circle text-gold"></i> Cashback dihitung dari total kekalahan bersih selama 1 minggu</p></div>
+          <button class="w-full mt-4 btn-outline py-3 text-sm font-bold infoBtn">Info Lengkap Cashback →</button>
+        </div>
+      </div>
+      
+      <!-- TAB 5: LAINNYA -->
+      <div id="tab5" class="tab-pane">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+          <div class="card-premium p-6 text-center">
+            <i class="fas fa-users text-gold text-5xl mb-4"></i>
+            <h3 class="text-2xl font-bold text-gold mb-2">BONUS AFILIATOR</h3>
+            <p class="text-4xl font-bold text-gold mb-3">2.5%</p>
+            <p class="text-gray-light text-sm">Dari kekalahan teman yang diajak bermain</p>
+            <div class="info-box mt-4"><p class="text-white text-lg font-semibold">🤝 Ajak temanmu sekarang!</p></div>
+          </div>
+          <div class="card-premium p-6">
+            <i class="fas fa-crown text-gold text-4xl mb-3 text-center w-full"></i>
+            <h3 class="text-xl font-bold text-gold text-center mb-4">LEVEL MEMBERSHIP</h3>
+            <div class="grid grid-cols-2 gap-2 text-center">
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">Brown</span><br><span class="text-gold font-bold">0.20%</span></div>
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">Silver</span><br><span class="text-gold font-bold">0.25%</span></div>
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">Gold</span><br><span class="text-gold font-bold">0.30%</span></div>
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">Platinum</span><br><span class="text-gold font-bold">0.35%</span></div>
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">Diamond</span><br><span class="text-gold font-bold">0.40%</span></div>
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">VIP</span><br><span class="text-gold font-bold">0.50%</span></div>
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">VVIP</span><br><span class="text-gold font-bold">0.60%</span></div>
+              <div class="bg-black/40 p-2 rounded-xl"><span class="text-gray-mid">Platinum VIP</span><br><span class="text-gold font-bold">0.80%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="pb-14">
+    <div class="container max-w-3xl">
+      <h2 class="text-3xl font-bold text-center mb-10"><span class="text-white">FAQ</span> <span class="text-gold-gradient">KOLONI4D</span></h2>
+      <div class="space-y-5">
+        <div class="card-premium overflow-hidden"><button class="faq-btn w-full text-left p-5 font-semibold flex justify-between text-white"><span>✅ Apakah KOLONI4D aman dan terpercaya?</span><i class="fas fa-chevron-down text-gold"></i></button><div class="faq-answer hidden px-5 pb-5 text-gray-mid text-sm">Ya, berlisensi internasional, enkripsi SSL 256-bit, fair play.</div></div>
+        <div class="card-premium overflow-hidden"><button class="faq-btn w-full text-left p-5 font-semibold flex justify-between text-white"><span>🎯 Pasaran apa saja yang tersedia?</span><i class="fas fa-chevron-down text-gold"></i></button><div class="faq-answer hidden px-5 pb-5 text-gray-mid text-sm">Singapore, Hongkong, Sydney, Damacai, Magnum4D, Bullseye, Sport Toto, Macau, dan lainnya.</div></div>
+        <div class="card-premium overflow-hidden"><button class="faq-btn w-full text-left p-5 font-semibold flex justify-between text-white"><span>📱 Bisakah diakses dari HP?</span><i class="fas fa-chevron-down text-gold"></i></button><div class="faq-answer hidden px-5 pb-5 text-gray-mid text-sm">100% responsif! Bisa diakses dari HP, tablet, maupun desktop.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black/90 backdrop-blur-xl border-t border-yellow-800/30 py-10">
+    <div class="container">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-extrabold"><span class="text-gold-gradient">KOLONI</span><span class="text-white">4D</span></h3>
+          <p class="text-gray-mid text-xs mt-2">Live draw togel online terpercaya</p>
+          <div class="flex gap-4 mt-4 text-gold text-xl">
+            <i class="fab fa-twitter cursor-pointer hover:text-yellow-300 transition"></i>
+            <i class="fab fa-instagram cursor-pointer hover:text-yellow-300 transition"></i>
+            <i class="fab fa-telegram cursor-pointer hover:text-yellow-300 transition"></i>
+          </div>
+        </div>
+        <div><h4 class="font-bold text-white">Menu</h4><ul class="mt-2 space-y-1 text-gray-mid text-xs"><li>Beranda</li><li>Pasaran</li><li>Bonus</li><li>FAQ</li></ul></div>
+        <div><h4 class="font-bold text-white">Legal</h4><ul class="mt-2 space-y-1 text-gray-mid text-xs"><li>Kebijakan Privasi</li><li>Syarat & Ketentuan</li><li>Lisensi Resmi</li></ul></div>
+        <div><h4 class="font-bold text-white">Kontak</h4><p class="text-gray-mid text-xs"><i class="fab fa-whatsapp text-gold mr-1"></i> +62 812 8888 7777</p><p class="text-gray-mid text-xs"><i class="fas fa-headset text-gold mr-1"></i> Live Chat 24 Jam</p></div>
+      </div>
+      <div class="divider my-6"></div>
+      <p class="text-center text-gray-mid text-[11px]">© 2025 KOLONI4D — Live draw togel online terpercaya</p>
+    </div>
+  </footer>
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <i class="fas fa-check-circle text-gold text-5xl mb-3"></i>
+    <h3 class="text-xl font-bold text-white mb-2" id="modalTitle">Informasi</h3>
+    <p class="text-gray-light text-sm" id="modalMessage">Terima kasih! Silakan hubungi CS WhatsApp untuk proses selanjutnya.</p>
+    <button class="mt-5 btn-gold px-6 py-2 text-sm" id="closeModalBtn">Tutup</button>
+  </div>
+</div>
+
+<script>
+  // MODAL
+  const modal = document.getElementById('modal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalMessage = document.getElementById('modalMessage');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  function showModal(title, msg) { modalTitle.innerText = title; modalMessage.innerText = msg; modal.style.display = 'flex'; }
+  closeModalBtn.onclick = () => modal.style.display = 'none';
+  window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+
+  // BUTTON ACTIONS
+  document.querySelectorAll('.klaimBtn, .infoBtn').forEach(btn => {
+    btn.addEventListener('click', () => showModal('Klaim Bonus', 'Silakan hubungi Customer Service WhatsApp kami untuk klaim bonus!'));
+  });
+  document.querySelectorAll('.loginBtn').forEach(btn => {
+    btn.addEventListener('click', () => showModal('Login', 'Fitur login akan segera hadir. Silakan hubungi CS untuk bantuan.'));
+  });
+  document.querySelectorAll('.daftarBtn, .heroDaftarBtn').forEach(btn => {
+    btn.addEventListener('click', () => showModal('Daftar', 'Hubungi CS WhatsApp untuk proses pendaftaran dan dapatkan bonus new member!'));
+  });
+
+  // FAQ TOGGLE
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ans = btn.nextElementSibling;
+      const icon = btn.querySelector('.fa-chevron-down');
+      ans.classList.toggle('hidden');
+      icon.style.transform = ans.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+    });
+  });
+
+  // TAB BONUS
+  const tabs = document.querySelectorAll('.tab-btn');
+  const panes = document.querySelectorAll('.tab-pane');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabId = tab.getAttribute('data-tab');
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      panes.forEach(p => p.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+
+  // DETAIL TOGGLE
+  document.querySelectorAll('.detail-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const detailId = toggle.getAttribute('data-detail');
+      const detail = document.getElementById(detailId);
+      if (detail.style.display === 'block') {
+        detail.style.display = 'none';
+        toggle.innerHTML = '📜 Lihat Syarat Lengkap';
+      } else {
+        detail.style.display = 'block';
+        toggle.innerHTML = '📜 Sembunyikan Syarat';
+      }
+    });
+  });
+
+  // SCROLL TOP
+  const scrollBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => { scrollBtn.style.display = window.scrollY > 300 ? 'flex' : 'none'; });
+  scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  scrollBtn.style.display = 'none';
+
+  // SMOOTH SCROLL
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+</script>
+</body>
+</html>
