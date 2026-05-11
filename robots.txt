@@ -1,0 +1,17 @@
+# SINGASLOT Robots.txt
+# Domain: https://koloni4dvip.cc.cd/
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /assets/images/
+Disallow: /404.html
+
+# Crawl delay untuk performa optimal
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://koloni4dvip.cc.cd/sitemap.xml
+
+# Host
+Host: https://koloni4dvip.cc.cd
