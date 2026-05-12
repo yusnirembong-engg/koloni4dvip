@@ -2,6 +2,11 @@
    KOLONI4D - MAIN STYLE SHEET
    Premium Futuristic Design
    ======================================== */
+/* ---------- SMOOTH SCROLL & OFFSET ---------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 
 /* ---------- RESET & BASE ---------- */
 * {
